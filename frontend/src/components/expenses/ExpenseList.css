@@ -1,0 +1,79 @@
+.expense-list-container {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.expense-list-container h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: #333;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 1rem;
+}
+
+.expense-list, .balances-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.expense-item:last-child {
+  border-bottom: none;
+}
+
+.expense-description {
+  font-weight: 500;
+}
+
+.expense-details {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.expense-amount {
+  font-weight: bold;
+  color: #333;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
+
+.balances-title {
+  margin-top: 2rem;
+}
+
+.balance-item {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  padding: 0.75rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.balance-item.positive {
+  background-color: #e9f7ef;
+  color: #1e7e34;
+}
+
+.balance-item.negative {
+  background-color: #fdf0f1;
+  color: #c82333;
+}
+
+.balances-summary {
+    font-size: 0.8rem;
+    color: #6c757d;
+    text-align: center;
+    margin-top: 1rem;
+}

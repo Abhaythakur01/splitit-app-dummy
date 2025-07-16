@@ -1,0 +1,106 @@
+/* Overall container for the groups page */
+.groups-page {
+  background-color: #f8f9fa; /* A light grey background for the whole page */
+  min-height: calc(100vh - 70px); /* Fill the screen below the navbar */
+  padding: 3rem 2rem;
+}
+
+.groups-page-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Page Title */
+.groups-page h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #343a40;
+  margin-bottom: 2.5rem;
+}
+
+/* "Create Group" section */
+.group-creator {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  margin-bottom: 3rem;
+}
+
+.group-creator form {
+  display: flex;
+  gap: 1rem;
+}
+
+.group-creator input {
+  flex-grow: 1;
+  padding: 0.9rem 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.group-creator input:focus {
+  outline: none;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.group-creator button {
+  padding: 0.9rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.group-creator button:hover {
+  background-color: #0069d9;
+}
+
+/* The list of groups */
+.group-list ul {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Individual group item card */
+.group-item {
+  background-color: #ffffff;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #495057;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.group-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Adding an arrow to indicate it's a link */
+.group-item::after {
+  content: '→';
+  font-size: 1.5rem;
+  color: #007bff;
+  transition: transform 0.2s ease;
+}
+
+.group-item:hover::after {
+  transform: translateX(5px);
+}

@@ -1,0 +1,77 @@
+/* A more sophisticated and modern navbar style */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 0 2rem;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1200px; /* Or your app's max-width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand .navbar-item {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.navbar-menu {
+  display: flex;
+}
+
+.navbar-end {
+  display: flex;
+  gap: 1.5rem; /* Increased space between items */
+  align-items: center;
+}
+
+.navbar-item {
+  color: #555;
+  text-decoration: none;
+  padding: 0.5rem 0; /* Padding top and bottom for a larger click area */
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Underline effect on hover */
+.navbar-item::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #007bff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar-item:hover {
+  color: #007bff;
+}
+
+.navbar-item:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Style for the active link */
+.navbar-item.active {
+  color: #007bff;
+  font-weight: 700;
+}
+
+.navbar-item.active::after {
+    transform: scaleX(1);
+    background-color: #007bff;
+}

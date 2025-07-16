@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Custom Text Selection Highlight */
+::selection {
+  background-color: #6b7280; /* Gray-500 - balanced gray */
+  color: #ffffff;          /* White text for good contrast */
+}
+
+/* This is the same rule for Firefox browsers */
+::-moz-selection {
+  background-color: #6b7280;
+  color: #ffffff;
+}
